@@ -71,11 +71,13 @@ margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 30%);
     grid-gap: 60px;
+    background-color: aliceblue;
 }
 
 .grid div{
-    /* Set border properties, padding, and background color */
-
+border: black 5px solid;
+border-radius: 25px;
+background-color: white;
 }
 
 .grid img{
@@ -86,28 +88,30 @@ margin: auto;
 
 
 .grid div:nth-child(3n+1)  {
-    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.2), -10px 0px 10px rgba(0, 0, 0, 0.2);
+box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .grid div:nth-child(3n)  {
-    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.2);
+box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.2), -5px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .grid div:nth-child(3n+2)  {
-box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.2);
+box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 p + p {
-text-indent: 20px;
+    text-indent: 20px;
   }
 
 p{
-margin-top: 10px;
+    margin-top: 10px;
 }
 
 .grid ul li {
-list-style-image: "images/sketchbook.jpg";
-margin: 0 0 20 20px;
-padding-left: 10px;
-line-height: 1;
+    list-style-type: none;
+    list-style-image: url('sketchbook.png');
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    line-height: 1;
   }
