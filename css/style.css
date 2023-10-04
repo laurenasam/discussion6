@@ -4,24 +4,29 @@ line-height: 1.5;
 
 
 header, nav{
-margin: 10px 0px 10px 0px; 
-padding: 20px 30px 20px 0px;
+margin-left: 40px;
+margin-right: 0px;
+margin-top: 10px;
+margin-bottom: 20px;
 background-color: white;
-padding: 10px;
+padding: 10px 20px 10px 20px;
+text-align: center;
 }
 
 nav ul li{
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-
+margin-left: 20px;
+margin-right: 40px;
+padding: 10px;
+display: inline-block;
+height: 100%;
+justify-content: space-between;
+align-items: center;
 }
 
 nav a{
-text-decoration: none;
 color: black;
-font-size: 16px;
+font-size: 28px;
+background-color:#FFD580;
 }
 
 nav a:visited{
@@ -35,11 +40,11 @@ a:visited{
 
 nav a.current{
 position: relative;
-text-decoration: none;
+text-decoration-style: wavy;
 }
 
 h1{
-font-size: 48px; /* Adjust the font size as needed */
+font-size: 48px;
 font-family: 'Merriweather', Anton, 'Times New Roman', sans-serif;
 
 }
@@ -73,34 +78,36 @@ margin: auto;
 }
 
 .grid img{
-    width: 100%; /* Take up 100% of the column width */
-    display: block; /* Remove any default inline styling */
-    margin: 0 auto; 
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 
 .grid div:nth-child(3n+1)  {
-    /* Set box shadow */
-    }
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.2), -10px 0px 10px rgba(0, 0, 0, 0.2);
+}
 
 .grid div:nth-child(3n)  {
-    /* Set box shadow */ 
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .grid div:nth-child(3n+2)  {
-     /* Set box shadow */
+box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.2);
 }
-    
 
 p + p {
-     /* Set indentation */
+    text-indent: 20px;
   }
-  
+
 p{
-     /* Set margin */
+    margin-top: 10px;
 }
 
-
-.grid ul li{
-    /* Set margin, line-spacing, list styling  */
-}
+.grid ul li {
+    list-style-image:"images/sketchbook.jpg";
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    line-height: 1;
+  }
